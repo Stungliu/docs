@@ -45,7 +45,8 @@ import '@logicflow/extension/lib/style/index.css'
 LogicFlow.use(DndPanel);
 LogicFlow.use(SelectionSelect);
 const lf = new LogicFlow({
-  container: document.querySelector('#graph') as HTMLElement
+  container: document.querySelector('#graph') as HTMLElement,
+  plugins:[DndPanel, SelectionSelect]
 });
 
 lf.extension.dndPanel.setPatternItems([
